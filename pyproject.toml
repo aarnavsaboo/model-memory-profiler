@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "model-memory-profiler"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+[project.scripts]
+model-memory-profiler = "model_memory_profiler.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["model_memory_profiler*"]
